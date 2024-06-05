@@ -22,7 +22,7 @@ while true; do
   if ! docker ps -f "name=$CONTAINER_NAME" --format "{{.Names}}" | grep -q "$CONTAINER_NAME"; then
     remove_container
 
-    echo "Aguarde 40s ..."
+    echo "Aguarde 40 segundos ..."
     # Contador regressivo de 40 até 0
     for ((i=40; i>=0; i--)); do
       printf "\r%d segundos restantes ..." "$i"

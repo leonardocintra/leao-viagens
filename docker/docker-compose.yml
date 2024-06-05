@@ -1,6 +1,6 @@
 services:
   mongodb:
-    image: mongo:4.2
+    image: mongo
     hostname: mongodb
     container_name: mongodb
     ports:
